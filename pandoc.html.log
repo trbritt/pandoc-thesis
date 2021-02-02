@@ -1,0 +1,49 @@
+[INFO] Running filter pandoc-shortcaption
+[INFO] Completed filter pandoc-shortcaption in 34 ms
+[INFO] Running filter pandoc-xnos
+
+pandoc-eqnos: Wrote the following blocks to header-includes.  If you
+use pandoc's --include-in-header option then you will need to manually
+include these yourself.
+
+    <!-- pandoc-eqnos: equation style -->
+    <style>
+      .eqnos { display: inline-block; position: relative; width: 100%; }
+      .eqnos br { display: none; }
+      .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
+    </style>
+[INFO] Completed filter pandoc-xnos in 25 ms
+[INFO] Not rendering RawBlock (Format "tex") "\\vspace*{\\fill}"
+[INFO] Not rendering RawInline (Format "tex") "\\noindent"
+[INFO] Not rendering RawInline (Format "tex") "\\textit{\nI, AUTHORNAME confirm that the work presented in this thesis is my own. Where information has been derived from other sources, I confirm that this has been indicated in the thesis.\n}"
+[INFO] Not rendering RawInline (Format "tex") "\\vspace*{\\fill}"
+[INFO] Not rendering RawInline (Format "tex") "\\pagenumbering{gobble}"
+[INFO] Not rendering RawInline (Format "tex") "\\newpage"
+[INFO] Not rendering RawBlock (Format "tex") "\\newpage"
+[INFO] Not rendering RawBlock (Format "tex") "\\newpage"
+[INFO] Not rendering RawBlock (Format "tex") "\\pagenumbering{roman}\n\\setcounter{page}{1}"
+[INFO] Not rendering RawBlock (Format "tex") "\\begin{tabbing}\n\\textbf{API}~~~~~~~~~~~~ \\= \\textbf{A}pplication \\textbf{P}rogramming \\textbf{I}nterface \\\\  \n\\textbf{JSON} \\> \\textbf{J}ava\\textbf{S}cript \\textbf{O}bject \\textbf{N}otation \\\\  \n\\end{tabbing}"
+[INFO] Not rendering RawBlock (Format "tex") "\\newpage"
+[INFO] Not rendering RawBlock (Format "tex") "\\newpage"
+[INFO] Not rendering RawBlock (Format "tex") "\\pagenumbering{gobble}"
+[INFO] Not rendering RawBlock (Format "tex") "\\tableofcontents"
+[INFO] Not rendering RawBlock (Format "tex") "\\newpage\n\\listoffigures"
+[INFO] Not rendering RawBlock (Format "tex") "\\newpage"
+[INFO] Not rendering RawBlock (Format "tex") "\\listoftables"
+[INFO] Not rendering RawBlock (Format "tex") "\\newpage"
+[INFO] Not rendering RawBlock (Format "tex") "\\setcounter{page}{1}\n\\pagenumbering{arabic}\n\\doublespacing\n\\setlength{\\parindent}{0.5in}"
+[INFO] Not rendering RawInline (Format "tex") "\\LaTeX "
+[WARNING] Could not convert TeX math '
+  \begin{aligned}
+      \hat{\theta}_g = \argmin_{\theta_g} \Big\{ - &\sum^{N}_{n=1}\Big( 1-\mathbb{1}[f(\pmb x^{(n)})]\Big)\log f\Big(\pmb x^{(n)} \\ 
+      &+ g(\pmb x^{(n)};\theta_g)\Big) + \lambda|g(\pmb x^{(n)};\theta_g)|_2 \Big\} \ ,
+  \end{aligned}
+  ', rendering as TeX:
+  igned}
+                     ^
+  unexpected "_"
+  expecting "%", "\\label", "\\nonumber" or whitespace
+[INFO] Not rendering RawBlock (Format "tex") "\\newpage"
+[INFO] Not rendering RawBlock (Format "tex") "\\footnotesize\n\\singlespacing\n\\setlength{\\parindent}{0in}"
+[INFO] No value for 'lang' was specified in the metadata.
+  It is recommended that lang be specified for this format.
