@@ -1,52 +1,3 @@
-# Template for writing a PhD thesis in Markdown [![Build Status](https://travis-ci.org/tompollard/phd_thesis_markdown.svg?branch=master)](https://travis-ci.org/tompollard/phd_thesis_markdown)  
-
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.58490.svg)](http://dx.doi.org/10.5281/zenodo.58490)
-
-This repository provides a framework for writing a PhD thesis in Markdown. I used the template for my PhD submission to University College London (UCL), but it should be straightforward to adapt suit other universities too.
-
-## Citing the template
-
-If you have used this template in your work, please cite the following publication:
-
-> Tom Pollard et al. (2016). Template for writing a PhD thesis in Markdown. Zenodo. http://dx.doi.org/10.5281/zenodo.58490
-
-## Quickstart
-If you're a mac user and you have conda and brew installed, run the following in your terminal to install and generate the example outputs:
-```bash
-# get texlive
-brew install --cask mactex
-
-# update tlmgr and packages
-sudo tlmgr update --self
-
-# make python venv and install pandoc
-conda create -n phd -y python=3.7 pandoc
-conda activate phd
-
-# Install required python and texlive packages
-make install
-```
-
-## Why write my thesis in Markdown?
-
-Markdown is a super-friendly plain text format that can be easily converted to a bunch of other formats like PDF, Word and LaTeX. You'll enjoy working in Markdown because:
-- it is a clean, plain-text format...
-- ...but you can use LaTeX when you need it (for example, in laying out mathematical formula).
-- it doesn't suffer from the freezes and crashes that some of us experience when working with large, image-heavy Word documents.
-- it automatically handles the table of contents, bibliography etc with Pandoc.
-- comments, drafts of text, etc can be added to the document by wrapping them in &lt;!--  --&gt;
-- it works well with Git, so keeping backups is straightforward. Just commit the changes and then push them to your repository.
-- it is able to take advantage of autocompletion capabilities for figures and citations in several text editors (VSCode, Sublime, etc.)
-- there is no lock-in. If you decide that Markdown isn't for you, then just output to Word, or whatever, and continue working in the new format.
-
-## Are there any reasons not to use Markdown?
-
-There are some minor annoyances:
-- if you haven't worked with Markdown before then you'll find yourself referring to the style-guide fairly often at first.
-- it isn't possible to add a short caption to tables ~~and figures~~ ([figures are now fixed](https://github.com/tompollard/phd_thesis_markdown/pull/47), thanks to @martisak). This means that /listoftables includes the long-caption, which probably isn't what you want. If you want to include the list of tables, then you'll need to write it manually.
-- the style documents in this framework could be improved. The PDF and HTML (thanks [@ArcoMul](https://github.com/ArcoMul)) outputs are acceptable, but ~~HTML and~~ Word needs work if you plan to output to this format.  
-- ~~there is no straightforward way of specifying image size in the markdown right now, though this functionality is coming (see: https://github.com/tompollard/phd_thesis_markdown/issues/15)~~ (Image size can now be specified. Thanks to @rudolfbyker for [highlighting this](https://github.com/tompollard/phd_thesis_markdown/issues/15)).
-- ... if there are more, please add them here.
 
 ## How is the template organised?
 
@@ -134,12 +85,4 @@ sudo tlmgr l3backend
 3. Try reinstalling everything from scratch (tip: check out [`.travis.yml`](./.travis.yml))
 3. Search the [github issues](https://github.com/tompollard/phd_thesis_markdown/issues) and [pull requests](https://github.com/tompollard/phd_thesis_markdown/pulls) in this repo
 
-# Contributing
-
-Contributions to the template are encouraged! There are lots of things that could be improved, like:
-- finding a way to add short captions for the tables, so that the lists of tables can be automatically generated.
-- cleaning up the LaTeX templates, which are messy at the moment.
-- improving the style of Word and TeX outputs.
-
-Please fork and edit the project, then send a pull request.
 #pandoc-thesis
