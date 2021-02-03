@@ -1,5 +1,5 @@
 [INFO] Running filter pandoc-shortcaption
-[INFO] Completed filter pandoc-shortcaption in 34 ms
+[INFO] Completed filter pandoc-shortcaption in 27 ms
 [INFO] Running filter pandoc-xnos
 
 pandoc-eqnos: Wrote the following blocks to header-includes.  If you
